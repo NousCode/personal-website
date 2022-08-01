@@ -1,0 +1,34 @@
+version: '3.9'
+
+services:
+
+  wordpress:
+    container_name: "WordPress"
+    image: wordpress:latest
+    restart: always
+    ports:
+      - '${WORDPRESS_PORT}'
+    environment:
+      WORDPRESS_DB_HOST: '${DB_HOST}'
+      WORDPRESS_DB_USER: '${DB_USER}'
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: '${DB_NAME}'
+    volumes:
+      - wordpress:/var/www/html
+      - ./themes/myspace:/var/www/html/wp-content/themes/myspace
+
+  my_db:
+    image: mysql:latest
+    container_name: "MySQl"
+    restart: always
+    environment:
+      MYSQL_DATABASE: '${DB_NAME}'
+      MYSQL_USER: '${DB_USER}'
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - my_db:/var/lib/mysql
+
+volumes:
+  wordpress:
+  my_db:
