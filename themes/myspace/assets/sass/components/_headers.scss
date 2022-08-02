@@ -1,5 +1,4 @@
 .header {
-	height: 80px;
 	font-size: 2.3rem;
 	&__navbar {
 		background-color: $primary-color !important;
@@ -14,12 +13,13 @@
 	}
 	a {
 		font-weight: 700;
-		text-decoration: none;
-		color: $light-color;
 		text-transform: uppercase;
+		height: 80px;
+		@include links();
 	}
+
 	a:hover {
-		color: $light-color;
+		color: $variation-color;
 	}
 }
 

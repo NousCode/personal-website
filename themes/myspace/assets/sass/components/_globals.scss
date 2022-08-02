@@ -3,7 +3,7 @@ $Font1: 'Ubuntu', sans-serif;
 $Font2: 'Source Sans Pro', sans-serif;
 $primary-color: #6c584c;
 $secondary-color: #472d30;
-$variation-color: #8a2846;
+$variation-color: #03FA6E;
 $light-color: #f7fff7;
 $dark-color: #11151c;
 $base-font-size: 1.8rem;
@@ -17,6 +17,11 @@ $base-font-size: 1.8rem;
 		text-transform: uppercase;
 		font-weight: 700;
 	}
+}
+
+@mixin links() {
+	text-decoration: none;
+	color: $light-color;
 }
 
 //loops

@@ -1,0 +1,38 @@
+.footer {
+	background-color: $secondary-color;
+	&__logo {
+		height: 90px;
+		padding-top: 5px;
+	}
+	&__text-made {
+		font-size: 2rem;
+		color: $light-color;
+		font-weight: 700;
+	}
+	&__projects {
+		color: $light-color;
+		font-weight: 700;
+		p {
+			margin: 0;
+			text-decoration: underline;
+			text-underline-position: under;
+		}
+		li {
+			list-style: none;
+			margin-right: 20px;
+		}
+		&--links {
+			font-size: 1.6rem;
+			padding-left: 0;
+			padding-top: 5px;
+		}
+		a {
+			padding-left: 8px;
+			border-left: 3px solid $variation-color;
+			@include links();
+		}
+		a:hover {
+			color: $variation-color;
+		}
+	}
+}

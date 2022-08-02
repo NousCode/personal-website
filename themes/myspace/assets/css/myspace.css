@@ -43,7 +43,6 @@ main {
 }
 
 .header {
-  height: 80px;
   font-size: 2.3rem;
 }
 .header__navbar {
@@ -57,12 +56,13 @@ main {
 }
 .container__menu a {
   font-weight: 700;
+  text-transform: uppercase;
+  height: 80px;
   text-decoration: none;
   color: #f7fff7;
-  text-transform: uppercase;
 }
 .container__menu a:hover {
-  color: #f7fff7;
+  color: #03FA6E;
 }
 
 .navbar-toggler {
@@ -71,4 +71,44 @@ main {
 }
 .navbar-toggler-icon {
   color: #f7fff7;
+}
+
+.footer {
+  background-color: #472d30;
+}
+.footer__logo {
+  height: 90px;
+  padding-top: 5px;
+}
+.footer__text-made {
+  font-size: 2rem;
+  color: #f7fff7;
+  font-weight: 700;
+}
+.footer__projects {
+  color: #f7fff7;
+  font-weight: 700;
+}
+.footer__projects p {
+  margin: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.footer__projects li {
+  list-style: none;
+  margin-right: 20px;
+}
+.footer__projects--links {
+  font-size: 1.6rem;
+  padding-left: 0;
+  padding-top: 5px;
+}
+.footer__projects a {
+  padding-left: 8px;
+  border-left: 3px solid #03FA6E;
+  text-decoration: none;
+  color: #f7fff7;
+}
+.footer__projects a:hover {
+  color: #03FA6E;
 }
