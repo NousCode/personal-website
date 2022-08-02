@@ -1,0 +1,22 @@
+.social-nav {
+	position: absolute;
+	top: 15%;
+	left: 20px;
+	display: flex;
+	justify-content: center;
+	width: 85px;
+	border: 1px solid rgba($dark-color, 0.2);
+	border-radius: 15px;
+	li {
+		margin: 3px 0;
+	}
+	li:hover {
+		border: 1px solid rgba($dark-color, 0.1);
+		border-radius: 50%;
+		padding: 5px;
+		margin: 10px 0;
+		box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
+		-webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
+		-moz-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
+	}
+}
