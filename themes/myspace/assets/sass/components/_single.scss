@@ -1,0 +1,12 @@
+.single__image {
+	img {
+		border-radius: 15px;
+	}
+}
+
+.single__description {
+	border-left: 1px solid rgba($dark-color, 0.3);
+	p {
+		padding-left: 8px;
+	}
+}

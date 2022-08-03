@@ -28,3 +28,28 @@ function assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'assets');
+
+function projects_type(){
+	$labels = array(
+		'name' => 'Projects',
+		'singular_name' => 'Project',
+		'menu_name' => 'Projects',
+	);
+	$args = array(
+		'label' => 'Projects',
+		'description' =>  'My own projects',
+		'labels' => $labels,
+		'supports' => array('title', 'editor', 'thumbnail', 'revisions','excerpt'),
+		'public' => true,
+		'show_in_menu' => true,
+		'menu_position' => 5,
+		'menu_icon' => get_template_directory_uri().'/assets/img/icons/portfolio-icon.png',
+		'can_export' => true,
+		'publicy_queryble' => true,
+		'rewrite' => true,
+		'show_in_rest' => true
+	);
+	register_post_type('project', $args);
+}
+
+add_action('init', 'projects_type');
