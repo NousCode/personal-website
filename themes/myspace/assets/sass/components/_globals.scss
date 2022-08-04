@@ -4,7 +4,7 @@ $Font2: 'Source Sans Pro', sans-serif;
 $primary-color: #6c584c;
 $secondary-color: #472d30;
 $variation-color: #03FA6E;
-$light-color: #f7fff7;
+$light-color: #FFF;
 $dark-color: #11151c;
 $base-font-size: 1.8rem;
 
@@ -54,6 +54,7 @@ body {
 	background-color: $light-color;
 	font-family: $Font2;
 	color: $dark-color;
+	line-height: 2.2rem;
 }
 
 main {
