@@ -1,8 +1,7 @@
 .card {
 	a {
 		text-decoration: none;
-		color: $variation-color;
-		text-shadow: 1px 1px 1px $dark-color;
+		@include shadow(1px, $variation-color);
 	}
 	a:hover {
 		color: #02883c;

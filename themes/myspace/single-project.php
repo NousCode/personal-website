@@ -13,6 +13,7 @@
 					<?php the_excerpt(); ?>
 				</div>
 			</div>
+			<?php get_template_part('template-parts/post', 'navigation'); ?>
 		<?php }
 	}?>
 </main>

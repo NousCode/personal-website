@@ -191,3 +191,68 @@ main {
 .single__description p {
   padding-left: 8px;
 }
+
+.nav-pagination {
+  margin: auto 30px;
+}
+.nav-pagination a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #03FA6E;
+  text-shadow: 0.5px 0.5px 0.5px #11151c;
+}
+.nav-pagination a:hover {
+  color: #02883c;
+}
+
+.contact h2 {
+  margin: 25px auto;
+}
+
+.contact__hero {
+  border-radius: 15px;
+}
+
+.contact__card {
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+.contact__card h3 {
+  font-size: 2rem;
+}
+.contact__card p {
+  font-size: 1.6rem;
+}
+.contact__card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.contact-info__email small, .contact-info__calendly small {
+  text-transform: lowercase;
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+
+.cv__download-bt li {
+  list-style: none;
+}
+.cv__download-bt a {
+  padding: 10px 25px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.contact__social-media p {
+  margin-top: 10px;
+  font-size: 2.5rem;
+}
+.contact__social-media a {
+  font-weight: 700;
+  text-decoration: none;
+}
+.contact__social-media a:hover {
+  color: #02883c;
+}

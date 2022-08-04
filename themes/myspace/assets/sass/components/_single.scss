@@ -10,3 +10,16 @@
 		padding-left: 8px;
 	}
 }
+
+.nav-pagination {
+	margin: auto 30px;
+	a {
+		text-decoration: none;
+		font-size: 2rem;
+		font-weight: 700;
+		@include shadow(0.5px, $variation-color);
+	}
+	a:hover {
+		color: #02883c;
+	}
+}

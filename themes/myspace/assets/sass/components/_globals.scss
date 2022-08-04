@@ -19,6 +19,11 @@ $base-font-size: 1.8rem;
 	}
 }
 
+@mixin shadow($size, $color) {
+	color: $color;
+	text-shadow: $size $size $size $dark-color;
+}
+
 @mixin links() {
 	text-decoration: none;
 	color: $light-color;
