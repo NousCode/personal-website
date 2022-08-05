@@ -24,10 +24,15 @@ function assets() {
 	wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js', '', '2.11.5', true);
 	wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js', array('jquery', 'pooper'), '5.2.0', true);
 
-	wp_enqueue_script('custom', get_template_directory_uri().'/assets/js/index.js', '', '1.0', true);
+	wp_enqueue_script( 'index', get_template_directory_uri().'/assets/js/index.js', array('jquery'), '1.0', 'true' );
+	wp_localize_script( 'index', 'pg', array(
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'apiurl' => home_url('wp-json/pg/v1/')
+	));
 }
 
 add_action( 'wp_enqueue_scripts', 'assets');
+
 
 function projects_type(){
 	$labels = array(
@@ -53,3 +58,69 @@ function projects_type(){
 }
 
 add_action('init', 'projects_type');
+
+function blogsAPI(){
+	register_rest_route( 'pg/v1', '/blogs/(?P<cantidad>\d+)', array(
+			'methods' => 'GET',
+			'callback' => 'pedidoBlogs'
+	));
+}
+
+add_action( 'rest_api_init', 'blogsAPI');
+
+function pedidoBlogs($data){
+	$args = array(
+			'post_type' => 'post',
+			'posts_per_page' => $data['cantidad'],
+			'order'     => 'DESC',
+			'orderby' => 'date'
+	);
+
+	$blogs = new WP_Query($args);
+	if ($blogs->have_posts()) {
+			$return = array();
+			while ($blogs->have_posts()) {
+					$blogs->the_post();
+					$return[] = array(
+							'image' => get_the_post_thumbnail( get_the_ID(), 'medium' ),
+							'link' => get_permalink(),
+							'title' => get_the_title(),
+							'description' => get_the_excerpt()
+					);
+			}
+	}
+	return $return;
+}
+
+function blogsPage(){
+	register_rest_route( 'pg/v1', '/blogs', array(
+			'methods' => 'GET',
+			'callback' => 'pedidosBlogs'
+	));
+}
+
+add_action( 'rest_api_init', 'blogsPage');
+
+function pedidosBlogs(){
+	$args = array(
+			'post_type' => 'post',
+			'posts_per_page' => -1,
+			'order'     => 'DESC',
+			'orderby' => 'title'
+	);
+
+	$blogs = new WP_Query($args);
+	if ($blogs->have_posts()) {
+			$return = array();
+			while ($blogs->have_posts()) {
+					$blogs->the_post();
+					$return[] = array(
+							'image' => get_the_post_thumbnail( get_the_ID(), 'medium' ),
+							'link' => get_permalink(),
+							'title' => get_the_title(),
+							'description' => get_the_excerpt()
+					);
+			}
+	}
+	return $return;
+}

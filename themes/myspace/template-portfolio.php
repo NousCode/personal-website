@@ -90,7 +90,7 @@ $fields = get_fields();
 							while($projects->have_posts()){
 								$projects->the_post(); ?>
 								<div class="col-4 px-4">
-									<div class="card shadow rounded-5 pt-3 ps-3">
+									<div class="card shadow rounded-5 pt-3 ps-3 card-projects">
 										<figure class="card-img-top align-self-center"><?php the_post_thumbnail('medium'); ?></figure>
 										<h3 class="text-start ps-3 mb-0">
 											<a href="<?php the_permalink(); ?>">

@@ -1,9 +1,44 @@
-.card {
+.card-projects {
+	img {
+		align-self: center;
+	}
 	a {
 		text-decoration: none;
 		@include shadow(1px, $variation-color);
 	}
 	a:hover {
 		color: #02883c;
+	}
+}
+
+.api-blogs__title {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	small {
+		text-transform: uppercase;
+	}
+}
+
+.blogs__cards {
+	img {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		width: 100%;
+	}
+	&--body {
+		padding: 0 12px 0 20px;
+		p {
+			font-size: 1.6rem;
+		}
+	}
+	&--btn {
+		margin-top: 25px;
+		margin-bottom: 15px;
+		a {
+			font-size: 1.6rem;
+			padding: auto 10px;
+			color: $variation-color;
+			font-weight: 700;
+		}
 	}
 }

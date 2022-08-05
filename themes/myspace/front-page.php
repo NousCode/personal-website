@@ -47,15 +47,15 @@
 					$args = array(
 						'post_type' => 'project',
 						'post_per_page' => 6,
-						'order' => 'ASC',
-						'orderby' => 'title'
+						'order' => 'DESC',
+						'orderby' => 'date'
 					);
 					$projects = new WP_Query($args);
 					if ($projects->have_posts()){
 						while($projects->have_posts()){
 							$projects->the_post(); ?>
 							<div class="col-4 px-4">
-								<div class="card shadow rounded-5 pt-3 ps-3">
+								<div class="card card-projects shadow rounded-5 pt-3 ps-3">
 									<figure class="card-img-top align-self-center"><?php the_post_thumbnail('medium'); ?></figure>
 									<h3 class="text-start ps-3 mb-0">
 										<a href="<?php the_permalink(); ?>">
@@ -71,6 +71,13 @@
 					}
 				?>
 			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-12 api-blogs__title text-center">
+				<small>Te gusta leer?</small>
+				<h2>Ultimos blogs</h2>
+			</div>
+			<div id="resultado-blogs" class="row"></div>
 		</div>
 	</div>
 </main>
