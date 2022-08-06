@@ -3,3 +3,9 @@
 		margin: 5px 10px 5px 0;
 	}
 }
+
+@media screen and (max-width: 780px) {
+	.table-content {
+		display: none;
+	}
+}

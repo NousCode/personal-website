@@ -427,10 +427,46 @@ main {
   color: #005625;
 }
 
+.logros-img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.logros-img img {
+  max-width: 250px;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 770px) {
+  .contact__hero {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+  }
+
+  .logros-img {
+    text-align: center;
+  }
+  .logros-img img {
+    height: 300px;
+    width: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .portfolio__table img {
   margin: 5px 10px 5px 0;
 }
 
+@media screen and (max-width: 780px) {
+  .table-content {
+    display: none;
+  }
+}
 .blog__grid {
   display: -ms-grid;
   display: grid;
@@ -440,42 +476,34 @@ main {
   grid-template-rows: 1fr 1fr;
   max-height: 400px;
 }
-
 .blog__grid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
 .blog__grid > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-
 .blog__grid > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-
 .blog__grid > *:nth-child(4) {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
 }
-
 .blog__grid > *:nth-child(5) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
 }
-
 .blog__grid > *:nth-child(6) {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
-
 .blog__grid > *:nth-child(7) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
-
 .blog__grid > *:nth-child(8) {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
@@ -557,11 +585,6 @@ main {
   font-weight: 700;
 }
 
-.blog__card {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
 .blog__card--image img {
   margin-left: 5px;
   border-radius: 20px;
@@ -590,4 +613,46 @@ main {
   padding: auto 10px;
   color: #03FA6E;
   font-weight: 700;
+}
+
+@media screen and (max-width: 770px) {
+  .blog__card {
+    max-width: 330px;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+  .blog__card--image {
+    max-width: 320px;
+    max-height: 320px;
+  }
+  .blog__card--body {
+    margin-left: 16px;
+  }
+  .blog__card--body h3 {
+    padding-top: 8px;
+    margin-bottom: 8px;
+    font-size: 2rem;
+  }
+  .blog__card--body p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .blog__card--btn {
+    margin-top: 14px;
+    margin-bottom: 12px;
+  }
+  .blog__card--btn a {
+    font-size: 1.6rem;
+    padding: auto 10px;
+    color: #03FA6E;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 754px) {
+  .blog__card {
+    margin: 0 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
 }

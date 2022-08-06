@@ -59,3 +59,30 @@
 		color: #005625;
 	}
 }
+
+.logros-img {
+	align-items: center;
+	img {
+		max-width: 250px;
+		max-height: 250px;
+		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.contact__hero {
+		height: 100%;
+		width: 100%;
+		max-width: 400px;
+		max-height: 400px;
+		margin: 0 auto;
+	}
+	.logros-img {
+		text-align: center;
+		img {
+			height: 300px;
+			width: 300px;
+			object-fit: cover;
+		}
+	}
+}

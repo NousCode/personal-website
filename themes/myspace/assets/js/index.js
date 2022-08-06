@@ -42,14 +42,14 @@
 						let html = "";
 						data.forEach(item => {
 								html += `
-								<div class="col-6">
+								<div class="col-12 col-md-6 col-lg-6">
 									<div class="card shadow mb-3 rounded-5 blog__card">
 										<div class="row g-0">
 											<div class="col-md-5">
 												<figure class="blog__card--image">${item.image}</figure>
 											</div>
 											<div class="col-md-7">
-												<div class="card-body blog__card--body pt-5 ps-4">
+												<div class="card-body blog__card--body p-0 pt-lg-5 ps-lg-4">
 													<h3 class="card-title">${item.title}</h3>
 													<p class="card-text">${item.description}</p>
 													<div class="text-center blog__card--btn" >
