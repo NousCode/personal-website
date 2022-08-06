@@ -6,10 +6,10 @@
 			the_post(); ?>
 			<h1 class="mt-4 mb-3"><?php the_title(); ?></h1>
 			<div class="row mb-5">
-				<div class="col-4 text-center single__image">
+				<div class="col-12 col-md-5 col-lg-4 text-center single__image">
 					<?php the_post_thumbnail('medium'); ?>
 				</div>
-				<div class="col-8 single__description">
+				<div class="col-12 col-md-7 col-lg-8 single__description">
 					<?php the_excerpt(); ?>
 				</div>
 			</div>

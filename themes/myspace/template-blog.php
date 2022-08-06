@@ -32,14 +32,14 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="item-3">
-				<img src="<?php echo get_template_directory_uri()?>/assets/img/peace-blog.jpg" alt="meditation">
+				<img src="<?php echo get_template_directory_uri()?>/assets/img/peace-responsive.jpg" alt="meditation">
 				<div class="overlay">
 					<h3>Mente (Academico)</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 				</div>
 			</div>
 			<div class="item-4">
-				<img src="<?php echo get_template_directory_uri()?>/assets/img/travel-blog.jpg" alt="travel">
+				<img src="<?php echo get_template_directory_uri()?>/assets/img/travel-responsive.jpg" alt="travel">
 				<div class="overlay">
 					<h3>Mente (Academico)</h3>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

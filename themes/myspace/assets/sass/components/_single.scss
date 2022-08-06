@@ -30,3 +30,15 @@
 		padding: 10px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.single__description {
+		margin-top: 12px;
+		border-top: 1px solid rgba($dark-color, 0.3);
+		border-left: 0px solid rgba($dark-color, 0.3);
+		p {
+			padding-left: 8px;
+		}
+	}
+
+}
