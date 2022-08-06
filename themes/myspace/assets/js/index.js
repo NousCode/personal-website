@@ -10,8 +10,8 @@
 					success: function(data) {
 							let html = "";
 							data.forEach(item => {
-									html += `<div class="col-3 my-3" >
-									<div class="card shadow rounded-4 blogs__cards">
+									html += `<div class="col-12 my-3 col-sm-6 col-md-4 col-lg-3 container-blogs__cards" >
+									<div class="card shadow rounded-4 blogs__cards mx-2">
 										<figure class="card-img-top">${item.image}</figure>
 										<div class="card-body blogs__cards--body">
 											<h3 class="card-title">${item.title}</h3>
@@ -71,5 +71,10 @@
 })
 })(jQuery);
 
+const toggleMenuElement = document.getElementById('toggle-menu');
+const mainMenuElement = document.getElementById('menu-main-menu');
 
+toggleMenuElement.addEventListener('click', ()=>{
+	setTimeout(mainMenuElement.classList.toggle('main-menu--show'), 0.5);
 
+})

@@ -1,6 +1,12 @@
+.banner-responsive {
+	display: none;
+}
 .card-projects {
 	img {
 		align-self: center;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
 	}
 	a {
 		text-decoration: none;
@@ -14,9 +20,6 @@
 .api-blogs__title {
 	margin-top: 20px;
 	margin-bottom: 15px;
-	small {
-		text-transform: uppercase;
-	}
 }
 
 .blogs__cards {
@@ -40,5 +43,25 @@
 			color: $variation-color;
 			font-weight: 700;
 		}
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.banner-home {
+		display: none;
+	}
+
+	.banner-responsive {
+		display: initial;
+
+	}
+
+	.card-projects {
+		max-width: 330px;
+		margin: 0 auto;
+	}
+	.blogs__cards {
+		max-width: 330px;
+		margin: 0 auto !important;
 	}
 }

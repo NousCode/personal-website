@@ -13,6 +13,15 @@
 					<?php the_excerpt(); ?>
 				</div>
 			</div>
+		<?php }
+	}?>
+	<hr>
+	<?php if(have_posts()) {
+		while (have_posts()) {
+			the_post(); ?>
+			<div class="row my-4">
+				<?php the_content(); ?>
+			</div>
 			<?php get_template_part('template-parts/post', 'navigation'); ?>
 		<?php }
 	}?>

@@ -15,6 +15,25 @@
 			</div>
 		<?php }
 	}?>
+	<hr>
+	<div class="row mt-5 mb-3">
+		<?php if(have_posts()) {
+			while(have_posts()) {
+				the_post(); ?>
+				<?php the_content(); ?>
+			<?php }
+		}?>
+	</div>
+	<hr>
+	<div class="row my-5">
+		<div class="col-6">
+			<h3>Le ha gustado...</h3>
+			<p>Vuelva a la sección de blogs, <strong>habrá más contenido</strong> disfrutable.</p>
+		</div>
+		<div class="col-6 text-center container-seemore">
+			<a class="btn btn-outline-success rounded-5" href="<?php echo home_url()."/blog";?>">Blogs 📰</a>
+		</div>
+	</div>
 </main>
 
 <?php get_footer(); ?>

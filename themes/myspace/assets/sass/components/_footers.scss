@@ -36,3 +36,12 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.footer__projects {
+		display: none;
+	}
+	.footer__text-made {
+		text-align: end;
+	}
+}

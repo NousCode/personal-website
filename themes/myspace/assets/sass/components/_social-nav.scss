@@ -1,7 +1,7 @@
 .social-nav {
 	position: fixed;
-	top: 15%;
-	left: 10px;
+	top: 17.5%;
+	left: 1rem;
 	display: flex;
 	justify-content: center;
 	width: 85px;
@@ -18,5 +18,18 @@
 		box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
 		-webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
 		-moz-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.34);
+	}
+}
+
+@media screen and (max-width: 1140px) {
+	.social-nav {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1445px) {
+	.social-nav {
+		top: 10%;
+		left: 20vw;
 	}
 }
