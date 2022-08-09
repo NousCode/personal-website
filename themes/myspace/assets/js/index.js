@@ -16,6 +16,7 @@
 										<div class="card-body blogs__cards--body">
 											<h3 class="card-title">${item.title}</h3>
 											<p class="card-text">${item.description}</p>
+											<p><strong>Fecha: </strong>${item.date}</p>
 											<div class="text-center blogs__cards--btn" >
 												<a href="${item.link}" class="btn btn-outline-success rounded-3">Leer más</a>
 											</div>
@@ -52,6 +53,7 @@
 												<div class="card-body blog__card--body p-0 pt-lg-5 ps-lg-4">
 													<h3 class="card-title">${item.title}</h3>
 													<p class="card-text">${item.description}</p>
+													<p><strong>Fecha: </strong>${item.date}</p>
 													<div class="text-center blog__card--btn" >
 														<a href="${item.link}" class="btn btn-outline-success rounded-3">Leer más</a>
 													</div>

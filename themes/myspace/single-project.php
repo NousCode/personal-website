@@ -11,6 +11,7 @@
 				</div>
 				<div class="col-12 col-md-7 col-lg-8 single__description">
 					<?php the_excerpt(); ?>
+					<p class="text-center"><strong>Fecha de publicación: </strong><?php echo get_the_date('l jS \of F Y'); get_ID?></p>
 				</div>
 			</div>
 		<?php }

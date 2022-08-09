@@ -86,7 +86,8 @@ function pedidoBlogs($data){
 							'image' => get_the_post_thumbnail( get_the_ID(), 'medium' ),
 							'link' => get_permalink(),
 							'title' => get_the_title(),
-							'description' => get_the_excerpt()
+							'description' => get_the_excerpt(),
+							'date' => get_the_date()
 					);
 			}
 	}
@@ -119,7 +120,8 @@ function pedidosBlogs(){
 							'image' => get_the_post_thumbnail( get_the_ID(), 'medium' ),
 							'link' => get_permalink(),
 							'title' => get_the_title(),
-							'description' => get_the_excerpt()
+							'description' => get_the_excerpt(),
+							'date' => get_the_date()
 					);
 			}
 	}

@@ -66,7 +66,9 @@ $fields = get_fields();
 											</a>
 										</h3>
 										<div class="card-body pt-0">
-											<p class="card-text text-center"><?php the_excerpt(); ?></p>
+											<p class="card-text"><?php the_excerpt();?>
+											<strong>Fecha: </strong><?php echo get_the_date();?>
+											</p>
 										</div>
 									</div>
 								</div>
