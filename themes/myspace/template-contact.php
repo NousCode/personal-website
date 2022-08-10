@@ -5,7 +5,7 @@ get_header(); ?>
 <?php if(have_posts()) {
 		while (have_posts()) {
 			the_post(); ?>
-			<h1 class="mt-5 mb-4">About me!</h1>
+			<h1 class="mt-5 mb-4" data-section="contactInfo" data-value="hero">About me!</h1>
 			<div class="row mb-5">
 				<div class="col-12 contact__about-me">
 					<?php the_content(); ?>
@@ -14,8 +14,8 @@ get_header(); ?>
 		<?php } ?>
 	<?php }?>
 
-	<small>Write me!</small>
-	<h2 class="mt-0">Contact Info.</h2>
+	<small data-section="contactInfo" data-value="small">Write me!</small>
+	<h2 class="mt-0" data-section="contactInfo" data-value="title">Contact Info.</h2>
 	<div class="row contact-info text-center">
 			<div class="col-12 col-sm-4 contact-info__email">
 				<img src="<?php echo get_template_directory_uri()?>/assets/img/icons/email.png" alt="email">
@@ -31,7 +31,7 @@ get_header(); ?>
 				</div>
 			</div>
 			<div class="col-12 col-sm-4 mt-5 mt-md-0">
-				<h3>Download my</h3>
+				<h3 data-section="contactInfo" data-value="download">Download my</h3>
 				<ul class="cv__download-bt">
 					<li><a class="btn btn-outline-success rounded-5 my-4" href="<?php echo home_url();?>">
 						CV 🇪🇦
@@ -43,8 +43,8 @@ get_header(); ?>
 			</div>
 	</div>
 
-	<small>Find me there</small>
-	<h2 class="mt-0 mb-5">Social Media</h2>
+	<small data-section="socialMedia" data-value="small">Find me there</small>
+	<h2 class="mt-0 mb-5" data-section="socialMedia" data-value="social">Social Media</h2>
 	<div class="row text-center mb-5">
 			<div class="col-6 col-md-3 contact__social-media">
 				<img src="<?php echo get_template_directory_uri()?>/assets/img/icons/twitter-contact.png" alt="twitter">

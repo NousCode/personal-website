@@ -11,8 +11,8 @@ $fields = get_fields();
 		<p class="mb-5"><?php echo $fields['description'] ?></p>
 
 		<div class="row table-content">
-			<small>I have developed with</small>
-			<h2>Technologies such as</h2>
+			<small data-section="portfolio" data-value="small">I have developed with</small>
+			<h2 data-section="portfolio" data-value="table">Technologies such as</h2>
 			<table class="table my-3 portfolio__table">
 			<thead>
 				<tr>
@@ -43,8 +43,8 @@ $fields = get_fields();
 		<p class="mt-5"><?php echo $fields['details'] ?></p>
 		<br>
 		<hr class="mb-4">
-		<small>All the</small>
-		<h2 class="mb-4">Projects</h2>
+		<small data-section="portfolio" data-value="small2">All the</small>
+		<h2 class="mb-4" data-section="portfolio" data-value="title">Projects</h2>
 		<div class="row mb-5">
 					<?php
 						$args = array(

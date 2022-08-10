@@ -1,7 +1,7 @@
 <nav class="social-nav shadow fixed-top">
 	<ul class="nav flex-column py-4">
-		<small class="text-center">Mis</small>
-		<h4>Redes</h4>
+		<small class="text-center" data-section="socialMenu" data-value="small">My</small>
+		<h4 data-section="socialMenu" data-value="title">Media</h4>
 		<hr>
 		<li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="https://twitter.com/Nous_Code">

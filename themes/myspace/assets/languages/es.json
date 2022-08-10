@@ -1,0 +1,11 @@
+{
+	"contactInfo": {
+		 "small": "Escribeme!",
+		 "title": "Información de Contacto",
+		 "download": "Descarga mi"
+	},
+	"socialMedia": {
+		"small": "Encuentrame ahí",
+		"social": "Redes Sociales"
+	} 
+}

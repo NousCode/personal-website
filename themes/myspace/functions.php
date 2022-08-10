@@ -73,6 +73,7 @@ function pedidoBlogs($data){
 	$args = array(
 			'post_type' => 'post',
 			'posts_per_page' => $data['cantidad'],
+			//'category_name' => 'blogs',
 			'order'     => 'DESC',
 			'orderby' => 'date'
 	);
@@ -87,7 +88,7 @@ function pedidoBlogs($data){
 							'link' => get_permalink(),
 							'title' => get_the_title(),
 							'description' => get_the_excerpt(),
-							'date' => get_the_date()
+							'date' => get_the_date(),
 					);
 			}
 	}

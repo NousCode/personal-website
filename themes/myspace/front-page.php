@@ -11,8 +11,8 @@
 
 		<div class="project-list mt-5">
 			<div class="col text-center">
-				<small style="text-align: center !important;" >Mira algunos de</small>
-				<h2 class="text-center mb-5">Mis Proyectos</h2>
+				<small style="text-align: center !important;" data-section="home" data-value="small" >Mira algunos de</small>
+				<h2 class="text-center mb-5" data-section="home" data-value="projects">Mis Proyectos</h2>
 			</div>
 			<div class="row">
 				<?php
@@ -35,7 +35,7 @@
 										</a>
 									</h3>
 									<div class="card-body pt-0">
-										<p class="card-text"><?php the_excerpt();?>
+										<p class="card-text"><?php the_excerpt(); ?>
 										<strong>Fecha: </strong><?php echo get_the_date();?>
 										</p>
 									</div>
@@ -48,8 +48,8 @@
 		</div>
 		<div class="my-3">
 			<div class="col-12 api-blogs__title text-center">
-				<small>Te gusta leer?</small>
-				<h2>Ultimos blogs</h2>
+				<small data-section="home" data-value="small2">Te gusta leer?</small>
+				<h2 data-section="home" data-value="title">Ultimos blogs</h2>
 			</div>
 			<div id="resultado-blogs" class="row"></div>
 		</div>

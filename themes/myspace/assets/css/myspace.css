@@ -58,6 +58,11 @@ main {
   background-color: #6c584c !important;
 }
 
+.menu-item img {
+  width: 20px !important;
+  height: 15px !important;
+}
+
 .container__menu li {
   list-style: none;
   display: inline-block;
