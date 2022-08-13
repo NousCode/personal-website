@@ -11,21 +11,24 @@
 				</div>
 				<div class="col-12 col-md-7 col-lg-8 single__description">
 					<?php the_excerpt(); ?>
-					<p class="text-center"><strong>Fecha de publicación: </strong><?php echo get_the_date('l jS \of F Y'); get_ID?></p>
+					<p class="text-center"><strong>Fecha de publicación: </strong><?php echo get_the_date('l jS \of F Y');?></p>
 				</div>
 			</div>
 		<?php }
 	}?>
 	<hr>
-	<?php if(have_posts()) {
-		while (have_posts()) {
-			the_post(); ?>
-			<div class="row my-4">
-				<?php the_content(); ?>
-			</div>
-			<?php get_template_part('template-parts/post', 'navigation'); ?>
-		<?php }
-	}?>
+	<div class="row mt-5 mb-3">
+		<?php if(have_posts()) {
+			while (have_posts()) {
+				the_post(); ?>
+				<div class="row my-4">
+					<?php the_content(); ?>
+				</div>
+				<?php get_template_part('template-parts/post', 'navigation'); ?>
+			<?php }
+		}?>
+	</div>
+
 </main>
 
 <?php get_footer(); ?>
