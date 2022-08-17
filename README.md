@@ -19,7 +19,7 @@ The project uses the WordPress CMS platform that brings a powerful way to built 
 
 ## Table of Contents
 1. [Configuration Environment](#-config-environment).
-2. [Built with](#-built-with).
+2. [Built with](#%EF%B8%8F-built-with).
 3. [Getting Started](#-getting-started).
 4. [Installation](#-installation)
 
